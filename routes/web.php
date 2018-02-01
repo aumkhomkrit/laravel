@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/aumkhrit', function(){
+    return view('aumkhrit.index');
+});
+
+Route::get('/apiwat56', function(){
+    return view('apiwat56.index');
+});
+
+Route::get('/khomsunt', function(){
+    return view('khomsunt.index');
+});
+
+Route::get('/jbarnes35', function(){
+    return view('jbarnes35.index');
+});
+
+Route::get('/memberren', function(){
+    return view('memberren.index');
+});
