@@ -19,11 +19,7 @@ Route::get('/aumkhrit', function(){
     return view('aumkhrit.index');
 });
 
-Route::get('/apiwat56', function(){
-$message = "เฮ้ เฮ้ !!!";
-
-    return view('apiwat56.index', compact('message'));
-});
+Route::get('/apiwat56', 'ApiwatController@index');
 
 Route::get('/khomsunt', function(){
     return view('khomsunt.index');

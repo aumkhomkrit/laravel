@@ -15,6 +15,11 @@ class CreateApiwatsTable extends Migration
     {
         Schema::create('apiwats', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('auther');
+            $table->integer('price');
+            $table->date('publish_date');
+            $table->string('publishing');
             $table->timestamps();
         });
     }
