@@ -97,25 +97,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach($books as $book)
-                        <tr>
-                            <td><a href="/apiwat56/{{ $book->id }}">{{ $book->title }}</a></td>
-                            <td>{{ $book->author }}</td>
-                            <td>{{ $book->price }}</td>
-                            <td>{{ $book->publish_date }}</td>
-                            <td>{{ $book->website }}</td>
-                            <td>{{ $book->id }}<a href="/apiwat56/{{ $book->id }}/delete">delete</a></td>
-                        </tr>
-                    @endforeach
                     <tr>
-                    <form action="/apiwat56" method="POST">
+                    <form action="/apiwat56/{{ $apiwat->id}}/edit" method="POST">
+                    {{ method_field('PUT') }}
                     {{ csrf_field() }}
-                        <td><input type="text" name="title" placehoder="title"></td>
-                        <td><input type="text" name="author" placehoder="author"></td>
-                        <td><input type="text" name="price" placehoder="price"></td>
-                        <td><input type="text" name="publish_date" placehoder="publish_date"></td>
-                        <td><input type="text" name="website" placehoder="publishing"></td>
-                        <td><input type="text" name="id" placehoder="id"></td>
+                        <td><input type="text" name="title" placehoder="title" value="{{ $apiwat->title }}"></td>
+                        <td><input type="text" name="author" placehoder="author" value="{{ $apiwat->author }}"></td>
+                        <td><input type="text" name="price" placehoder="price" value="{{ $apiwat->price }}"></td>
+                        <td><input type="text" name="publish_date" placehoder="publish_date" value="{{ $apiwat->publish_date }}"></td>
+                        <td><input type="text" name="website" placehoder="publishing" value="{{ $apiwat->website }}"></td>
+                        <td><input type="text" name="id" placehoder="id" value="{{ $apiwat->id }}"></td>
                     </tr>
                     <tr>
                         <td colspan="6"><input type="submit" value="submit"></td>

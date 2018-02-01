@@ -20,6 +20,10 @@ Route::get('/aumkhrit', function(){
 });
 
 Route::get('/apiwat56', 'ApiwatController@index');
+Route::post('/apiwat56', 'ApiwatController@store');
+Route::get('/apiwat56/{apiwat}', 'ApiwatController@view');
+Route::put('/apiwat56/{id}/edit', 'ApiwatController@update');
+Route::get('/apiwat56/{id}/delete', 'ApiwatController@destroy');
 
 Route::get('/khomsunt', function(){
     return view('khomsunt.index');

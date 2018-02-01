@@ -20,6 +20,7 @@ class CreateApiwatsTable extends Migration
             $table->integer('price');
             $table->date('publish_date');
             $table->string('publishing');
+            $table->string('website');
             $table->timestamps();
         });
     }
