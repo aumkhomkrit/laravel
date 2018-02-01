@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/aumkhrit', function(){
-    return view('aumkhrit.index');
-});
+Route::get('/aumkhrit', 'AumController@index');
+Route::post('/aumkhrit', 'AumController@store');
+Route::get('/aumkhrit/{aum}', 'AumController@view');
+Route::put('/aumkhrit/{aum}/edit', 'AumController@update');
+Route::get('/aumkhrit/{aum}/delete', 'AumController@destroy');
+
 
 Route::get('/apiwat56', 'ApiwatController@index');
 Route::post('/apiwat56', 'ApiwatController@store');
