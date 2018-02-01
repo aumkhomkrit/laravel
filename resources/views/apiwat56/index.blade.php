@@ -80,11 +80,12 @@
             <div class="content">
                 <div class="title m-b-md">
                     APIWAT56
+                    {{ $message }}
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://www.facebook.com/apiwat44">Facebook</a>
+                    <a href="https://www.youtube.com/channel/UCba2DBvLKpkooMMZwGBGZnQ">Youtube Channel</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
