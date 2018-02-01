@@ -17,7 +17,7 @@ class CreateAumsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('lanme');
-            $table->timestamps('d_update');
+            $table->timestamps();
         });
     }
 
